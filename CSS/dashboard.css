@@ -1,0 +1,537 @@
+body{
+    margin: 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons-div {
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0px 0px 0px 20px;
+  padding: 2px 3px 3px 33px;
+  height: 35px;
+}
+
+.logout {
+  position: relative;
+  left: 39%;
+  margin-top: 2px;
+  color: #fff;
+}
+
+.logout button {
+  border: none;
+  background-color: #E17576;
+  padding: 8px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.toggle-on {
+  position: relative;
+  right: 76%;
+  height: 100%;
+}
+
+.toggle-on i {
+  color: #79ee81;
+  padding: 2px 0px 0px 0px;
+  font-size: 33px;
+}
+
+.logout-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* semi-transparent black */
+  z-index: 999;
+  /* make sure it's above other content */
+}
+
+.logout-popup {
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "Kanit", sans-serif;
+  z-index: 1000;
+  /* make sure it's above overlay */
+}
+
+.logout-popup h6 {
+  margin: 0;
+  color: rgb(84, 132, 235);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 20px 0px;
+}
+
+.logout-popup p {
+  padding: 0px 20px 0px;
+  margin: 0;
+}
+
+.logout-options select {
+  width: 85%;
+  padding: 6px;
+  border: 1px solid rgb(84, 132, 235);
+  border-radius: 4px;
+  margin: 10px 20px;
+}
+
+.logout-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 5px 7px;
+}
+
+.logout-button button {
+  border: none;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(71, 118, 220);
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.logout-button-no button {
+  color: #E17576;
+}
+
+.logout-button button:hover {
+  opacity: 0.8;
+}
+.dashboard-head{
+  display: flex;
+  justify-content: space-between;
+}
+.log-out-btn button{
+  border: none;
+    background-color: #E17576;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.popup h2{
+  color: #f00101;
+  font-size: 25px;
+  text-align: center;
+  margin: 5px 0;
+}
+.popup p{
+  margin: 5px 0;
+ }
+ .popup button{
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgb(71, 118, 220);
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 5px;
+ }
+ .popup button a{
+  text-decoration: none;
+  color: red;
+ }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  display: none;
+}
+.dashboard-page{
+    width: 80%;
+    margin: 20px 20px 20px 0;
+}
+.date h3{
+    font-size: 20px;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #B1B2B8; 
+}
+.thought h1{
+    font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #242222; 
+  margin: 0;
+}
+.thought span{
+    color: #596ec0;
+    font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.remarks{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* latemarks */
+.latemarks{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  width: 20%;
+  border-radius:20px;
+}
+.latemarks-symbol{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.latemarks-count h3{
+  margin: 0;
+  color: #596ec0;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.latemarks-count-number{
+  margin: 5px 0 0 0;
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.latemarks-symbol i{
+  font-size: 25px;
+  color: #fff;
+  background-color:#6677bd ;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+/* Early leaves */
+.early-leave{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  width: 20%;
+  border-radius:20px;
+}
+.early-leave-symbol{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.early-leave-count h3{
+  margin: 0;
+  color: #09f362;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.early-leave-count-number{
+  margin: 5px 0 0 0;
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.early-leave-symbol i{
+  font-size: 25px;
+  color: #fff;
+  background-color:#09f362 ;
+  padding: 10px;
+  border-radius: 50px;
+}
+/* Overtime */
+.overtime{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  width: 20%;
+  border-radius:20px;
+}
+.overtime-symbol{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.overtime-count h3{
+  margin: 0;
+  color: #cb28d1;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.overtime-count-number{
+  margin: 5px 0 0 0;
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.overtime-symbol i{
+  font-size: 25px;
+  color: #fff;
+  background-color:#cb28d1 ;
+  padding: 10px;
+  border-radius: 50px;
+}
+/* rewards */
+.total-rewards{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  border-radius:20px;
+  width: 20%;
+}
+.total-rewards-symbol{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.total-rewards-count h3{
+  margin: 0;
+  color: #e48022;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.total-rewards-counts{
+  margin: 5px 0 0 0;
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.total-rewards-symbol i{
+  font-size: 25px;
+  color: #fff;
+  background-color:#e48022 ;
+  padding: 10px;
+  border-radius: 50px;
+}
+/* statistics */
+.statistics-main{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #C4DDFC;
+  padding: 20px;
+  border-radius: 20px;
+}
+.statistics-count i{
+  font-size: 25px;
+  color: #6677bd;
+}
+.statistics-count{
+  margin: 20px 0 0 0;
+  
+  width: 20%;
+}
+
+.statistics-count {
+  margin: 0;
+}
+.statistics-count h2{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #2b4eda;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+.statistics-count h3{
+  color: #B1B2B8; 
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  font-size: 15px;
+} 
+.statistics-count h3 span{
+  font-family: bold;
+  color: #000;
+}
+/* statistics */
+/* .privilage-leaves */
+.privilage-leaves{
+  background-color: #fff;
+  width: 20%;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+}
+.privilage-leaves-symbol i{
+  color: #fff;
+}
+.privilage-leaves-symbol{
+  background-color: #2FBCCD;
+  width: 10%;
+  padding: 8px;
+  border-radius: 22px;
+  text-align: center;
+}
+.privilage-leaves-count-number{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 5px 0 5px 0;
+}
+.privilage-leaves-head h3{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #B1B2B8; 
+}
+/* .privilage-leaves */
+/* comp-off */
+.comp-off{
+  background-color: #fff;
+  width: 20%;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+}
+.comp-off-symbol i{
+  color: #fff;
+}
+.comp-off-symbol{
+  background-color: #F9C346;
+  width: 10%;
+  padding: 8px;
+  border-radius: 22px;
+  text-align: center;
+}
+.comp-off-count-number{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 5px 0 5px 0;
+}
+.comp-off-head h3{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #B1B2B8; 
+}
+/* comp-off */
+/* sick-leaves */
+.sick-leaves{
+  background-color: #fff;
+  width: 20%;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+}
+.sick-leaves-symbol i{
+  color: #fff;
+}
+.sick-leaves-symbol{
+  background-color: #E54C3D;
+  width: 10%;
+  padding: 8px;
+  border-radius: 22px;
+  text-align: center;
+}
+.sick-leaves-count-number{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 5px 0 5px 0;
+}
+.sick-leaves-head h3{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  color: #B1B2B8; 
+}
+/* sick-leaves */
+/* Today */
+.today-head h2{
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.today-head{
+  display: flex;
+}
+.today-head i{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:10px ;
+}
+.today-body{
+  display: flex;
+  justify-content: space-evenly;
+  color: #B1B2B8;
+  font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px 20px;
+    border-radius:10px ;
+}
+.today-body h6{
+  margin: 0;
+}
+.process button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: none !important;
+  background-color: #C4DDFC;
+  padding: 8px 83px;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  color: #2b4eda;
+}
+.flex-coloum-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
